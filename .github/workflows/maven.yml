@@ -22,7 +22,7 @@ jobs:
         run: mvn -B clean package
 
       - name: Archive artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: success()
         with:
           name: ProxyServer
